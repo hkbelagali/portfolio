@@ -1,192 +1,56 @@
-/* Modern color palette */
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #fafafa;
-  --vt-c-white-mute: #f5f5f5;
-
-  --vt-c-black: #0f0f0f;
-  --vt-c-black-soft: #1a1a1a;
-  --vt-c-black-mute: #262626;
-
-  /* Modern primary colors */
-  --vt-c-primary: #8b5cf6;
-  --vt-c-primary-dark: #7c3aed;
-  --vt-c-primary-light: #a78bfa;
-
-  /* Colorful palette */
-  --vt-c-purple: #8b5cf6;
-  --vt-c-purple-dark: #7c3aed;
-  --vt-c-pink: #ec4899;
-  --vt-c-pink-dark: #db2777;
-  --vt-c-orange: #f97316;
-  --vt-c-orange-dark: #ea580c;
-  --vt-c-green: #10b981;
-  --vt-c-green-dark: #059669;
-  --vt-c-cyan: #06b6d4;
-  --vt-c-cyan-dark: #0891b2;
-  --vt-c-yellow: #f59e0b;
-  --vt-c-yellow-dark: #d97706;
-  --vt-c-red: #ef4444;
-  --vt-c-red-dark: #dc2626;
-
-  --vt-c-divider-light-1: rgba(0, 0, 0, 0.08);
-  --vt-c-divider-light-2: rgba(0, 0, 0, 0.04);
-  --vt-c-divider-dark-1: rgba(255, 255, 255, 0.15);
-  --vt-c-divider-dark-2: rgba(255, 255, 255, 0.08);
-
-  --vt-c-text-light-1: #1f2937;
-  --vt-c-text-light-2: #6b7280;
-  --vt-c-text-dark-1: #f9fafb;
-  --vt-c-text-dark-2: #d1d5db;
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  color: #161616;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --muted: #626262;
+  --border: #dedede;
+  color-scheme: light;
 }
-
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-  --color-text-mute: var(--vt-c-text-light-2);
-  
-  --color-primary: var(--vt-c-primary);
-  --color-primary-dark: var(--vt-c-primary-dark);
-  --color-primary-light: var(--vt-c-primary-light);
-
-  /* Additional colorful variables */
-  --color-purple: var(--vt-c-purple);
-  --color-purple-dark: var(--vt-c-purple-dark);
-  --color-pink: var(--vt-c-pink);
-  --color-pink-dark: var(--vt-c-pink-dark);
-  --color-orange: var(--vt-c-orange);
-  --color-orange-dark: var(--vt-c-orange-dark);
-  --color-green: var(--vt-c-green);
-  --color-green-dark: var(--vt-c-green-dark);
-  --color-cyan: var(--vt-c-cyan);
-  --color-cyan-dark: var(--vt-c-cyan-dark);
-  --color-yellow: var(--vt-c-yellow);
-  --color-yellow-dark: var(--vt-c-yellow-dark);
-  --color-red: var(--vt-c-red);
-  --color-red-dark: var(--vt-c-red-dark);
-
-  /* Gradient backgrounds */
-  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-purple) 100%);
-  --gradient-secondary: linear-gradient(135deg, var(--color-pink) 0%, var(--color-orange) 100%);
-  --gradient-success: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-green) 100%);
-  --gradient-warm: linear-gradient(135deg, var(--color-yellow) 0%, var(--color-orange) 100%);
-  --gradient-hero: linear-gradient(135deg, var(--color-primary) 0%, var(--color-purple) 50%, var(--color-pink) 100%);
-  
-  /* Light colored backgrounds */
-  --bg-blue-light: rgba(139, 92, 246, 0.1);
-  --bg-purple-light: rgba(139, 92, 246, 0.1);
-  --bg-pink-light: rgba(236, 72, 153, 0.1);
-  --bg-orange-light: rgba(249, 115, 22, 0.1);
-  --bg-green-light: rgba(16, 185, 129, 0.1);
-  --bg-cyan-light: rgba(6, 182, 212, 0.1);
-  --bg-yellow-light: rgba(245, 158, 11, 0.1);
-
-  --section-gap: 80px;
-  
-  /* Modern shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  
-  /* Colorful shadows */
-  --shadow-blue: 0 10px 15px -3px rgba(59, 130, 246, 0.2), 0 4px 6px -2px rgba(59, 130, 246, 0.1);
-  --shadow-purple: 0 10px 15px -3px rgba(139, 92, 246, 0.2), 0 4px 6px -2px rgba(139, 92, 246, 0.1);
-  --shadow-pink: 0 10px 15px -3px rgba(236, 72, 153, 0.2), 0 4px 6px -2px rgba(236, 72, 153, 0.1);
-  --shadow-orange: 0 10px 15px -3px rgba(249, 115, 22, 0.2), 0 4px 6px -2px rgba(249, 115, 22, 0.1);
-  --shadow-cyan: 0 10px 15px -3px rgba(6, 182, 212, 0.2), 0 4px 6px -2px rgba(6, 182, 212, 0.1);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-1);
-    --color-text-mute: var(--vt-c-text-dark-2);
-  }
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  font-weight: normal;
 }
-
-body {
-  min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  transition: color 0.3s ease, background-color 0.3s ease;
-  line-height: 1.7;
-  font-family:
-    'Inter',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Improved typography scale */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-heading);
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.025em;
-}
-
-h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 1.875rem;
-  font-weight: 600;
-}
-
-h4 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+}
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+a:hover {
+  text-decoration-thickness: 2px;
+}
+a:focus-visible,
+button:focus-visible,
+video:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+::selection {
+  color: #fff;
+  background: #222;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
